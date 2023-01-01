@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(232, 251, 255);
+}
+
+.register-form{
+    width: auto;
+    box-sizing: border-box;
+    padding: 2.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: .5em;
+    box-shadow: .1em .1em 5em grey;
+    background-color: white;
+}
+
+.heading{
+    font-size: 1.5em;
+    margin: 0;
+    color: #029dcc;
+    font-weight: bold;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: .5em;
+}
+
+.input-block{
+    display: flex;
+    align-items: center;
+    margin: .75em 0;
+    padding: 0 .45em;
+    overflow: hidden;
+    background-color: rgb(226, 226, 226);
+    box-sizing: border-box;
+}
+
+.input-block>i{
+    height: 100%;
+    cursor: pointer;
+    color: rgb(78, 78, 78);
+}
+.input-block > input{
+    padding: .95em .75em;
+    border: none;
+    border-radius: .15em;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: .95em 0;
+    background-color: #029dcc;
+    border: none;
+    border-radius: .15em;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#add-icon{
+    position: absolute;
+    top: -3.5%;
+    right: -3.5%;
+    font-size: 2.75em;
+    color: rgb(2, 157, 204);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(2, 157, 204);
+    font-size: .85em;
+    font-weight: 600;
+    margin-top: .75em;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.password-requirements {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 40%;
+    right: -70%;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: .1em .1em .5em grey;
+    padding: .5em;
+    border-radius: .5em;
+}
+
+.password-requirements > span{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.password-requirements > p{
+    margin: .45em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+span >p{
+    margin: 0.2em;
+}
+
+span>i{
+    margin-right: .5em;
+    color: #b6b5b5;
+}
+
+.password-strength{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5em;
+    box-sizing: border-box;
+}
+
+.strength-bar{
+    width: 100%;
+    background-color: #dcdcdc;
+    height: 10px;
+    display: none;
+}
+
+.strength{
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+    height: 100%;
+    background-color: grey;
+    transition:ease-in-out 980ms;
+}
+
+#captcha-field{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: .25em .5em;
+    background-color: transparent;
+}
+
+.captcha-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#captcha{
+    padding: .95em .75em;
+    border: none;
+    border-radius: .25em;
+    background-color: #dcdcdc;
+    outline: none;
+    width: 100%; 
+    margin-top: .5em;
+}
+
+#refresh_btn{
+    color: rgb(2, 157, 204);
+    font-size: 1.25em;
+    margin-left: .5em;
+    cursor: pointer;
+}
+
+.error-text{
+    width: 15%;
+    height: auto;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    background-color: red;
+    box-sizing: border-box;
+    color: white;
+    border-radius: .5em;
+}
+
+.error-text > p{
+    margin: 1.5em 0;
+    text-align: center;
+}
+
+

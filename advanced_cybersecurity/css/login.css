@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(232, 251, 255);;
+}
+
+.login-form{
+    width: auto;
+    box-sizing: border-box;
+    padding: 2.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: .5em;
+    box-shadow: .1em .1em 5em grey;
+    background-color: white;
+}
+
+.heading{
+    font-size: 1.5em;
+    margin: 0;
+    color: rgb(2, 157, 204);
+    font-weight: bold;
+}
+
+.container{
+    box-sizing: border-box;
+    padding: .5em;
+}
+
+.input-block{
+    display: flex;
+    align-items: center;
+    margin: .75em 0;
+    padding: 0 .45em;
+    overflow: hidden;
+    background-color: rgb(226, 226, 226);
+    box-sizing: border-box;
+}
+
+.input-block>i{
+    height: 100%;
+    cursor: pointer;
+    color: rgb(78, 78, 78);
+}
+.input-block > input{
+    padding: .95em .75em;
+    border: none;
+    border-radius: .15em;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: .95em 0;
+    background-color: rgb(2, 157, 204);
+    border: none;
+    border-radius: .15em;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#login-icon{
+    position: absolute;
+    top: -7.5%;
+    right: -5%;
+    font-size: 1.75em;
+    background-color: rgb(2, 157, 204);
+    color: white;
+    padding: .5em;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(2, 157, 204);
+    font-size: .85em;
+    font-weight: 600;
+    margin-top: .95em;
+}
+
+a:hover{
+    text-decoration: underline;
+}

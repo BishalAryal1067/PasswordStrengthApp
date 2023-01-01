@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap');
+
+*{
+    font-family: 'Arimo', sans-serif;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(232, 251, 255);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 1em 5em;
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+h2{
+    color: rgb(4, 122, 158);
+}
+
+.container{
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 1.5em 2.5em;
+    box-shadow: .1em .1em .5em grey;
+    border-radius: .5em;
+}
+
+.container > span{
+    display: flex;
+}
+span > p {
+    margin: .5em .5em;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: .95em 0;
+    background-color: rgb(2, 157, 204);
+    border: none;
+    border-radius: .15em;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin: .75em 0; 
+}
+
+#logout-btn {
+    box-sizing: border-box;
+    padding: 0.5em .75em;
+}
